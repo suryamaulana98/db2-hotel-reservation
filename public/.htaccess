@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Jika file/folder yang diminta ada secara fisik, gunakan langsung
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Semua request lainnya diarahkan ke index.php?url=PATH
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]

@@ -1,0 +1,3 @@
+# Upload Directory
+Folder ini digunakan untuk menyimpan file upload (gambar kamar, bukti pembayaran).
+Pastikan folder ini writable oleh web server.

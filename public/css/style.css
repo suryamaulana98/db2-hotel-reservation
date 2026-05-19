@@ -1,0 +1,158 @@
+/**
+ * ============================================================
+ * HOTEL RESERVATION SYSTEM - Custom CSS
+ * ============================================================
+ * Warna: Navy (#1a2332) + Gold (#c9a84c) + Modern Blues
+ */
+
+/* ===== ROOT VARIABLES ===== */
+:root {
+    --primary: #1a3a5c;
+    --primary-light: #2c5282;
+    --primary-dark: #0f2440;
+    --accent: #c9a84c;
+    --accent-light: #e8d5a3;
+    --success: #2d9f5c;
+    --bg-light: #f4f6f9;
+    --text-dark: #1a2332;
+    --text-muted: #6b7a8d;
+    --card-shadow: 0 2px 16px rgba(26, 58, 92, 0.08);
+    --transition: all 0.3s ease;
+}
+
+/* ===== GLOBAL ===== */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+/* ===== NAVBAR GRADIENT ===== */
+.bg-primary-gradient {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--primary-light) 100%) !important;
+}
+
+.navbar-brand {
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+}
+
+/* ===== AUTH PAGE ===== */
+.auth-page {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+    min-height: 100vh;
+}
+
+.auth-page .card {
+    backdrop-filter: blur(10px);
+}
+
+/* ===== ROOM CARDS ===== */
+.room-card {
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.room-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(26, 58, 92, 0.15);
+}
+
+.room-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.room-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.room-card:hover .room-img {
+    transform: scale(1.08);
+}
+
+.room-img-placeholder {
+    height: 200px;
+    background: linear-gradient(135deg, #e9ecef, #dee2e6);
+}
+
+/* ===== STAT CARDS ===== */
+.card-stat {
+    transition: var(--transition);
+}
+
+.card-stat:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(26, 58, 92, 0.12);
+}
+
+.stat-icon {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-primary-soft { background-color: rgba(26, 58, 92, 0.1); }
+.bg-success-soft { background-color: rgba(45, 159, 92, 0.1); }
+.bg-warning-soft { background-color: rgba(255, 193, 7, 0.1); }
+.bg-info-soft { background-color: rgba(13, 202, 240, 0.1); }
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    border: none;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(26, 58, 92, 0.3);
+}
+
+/* ===== TABLES ===== */
+.table-dark {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary)) !important;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(26, 58, 92, 0.04);
+}
+
+/* ===== CARDS ===== */
+.card {
+    border-radius: 1rem;
+}
+
+.rounded-4 { border-radius: 1rem !important; }
+.rounded-top-4 { border-top-left-radius: 1rem !important; border-top-right-radius: 1rem !important; }
+
+/* ===== BADGES ===== */
+.badge {
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+/* ===== ALERTS ===== */
+.alert {
+    border: none;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 0.75rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .display-5 { font-size: 1.8rem; }
+    .container { padding-left: 1rem; padding-right: 1rem; }
+}
