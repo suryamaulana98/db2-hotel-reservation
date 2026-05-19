@@ -1,0 +1,97 @@
+﻿# Hotel Reservation System
+
+Sistem Reservasi Hotel berbasis website menggunakan PHP Native dengan konsep MVC dan database MySQL.
+
+Project ini dibuat untuk memenuhi tugas UAS mata kuliah Basis Data 2 dengan implementasii:
+- View
+- Stored Procedure
+- Trigger
+- Cursor
+
+---
+
+# Tech Stack
+
+- Backend: PHP Native
+- Architecture: MVC
+- Database: MySQL
+- Frontend: HTML, CSS, Bootstrap 5
+- Server: Laragon / XAMPP
+- Database Access: PDO
+
+---
+
+# Features
+
+## User
+- Register & Login
+- Melihat
+- Melihat daftar kamar hotel
+- Melihat detail kamar
+- Booking kamar
+- Upload bukti pembayaran
+- Melihat riwayat booking
+- Logout
+
+## Admin
+- Login admin
+- CRUD data kamar
+- Mengelola data booking
+- Verifikasi pembayaran
+- Mengubah status booking
+- Melihat laporan transaksi
+- Dashboard admin
+
+---
+
+# Database Features (Basis Data 2)
+
+## 1. VIEW
+Digunakan untuk:
+- Menampilkan kamar tersedia
+- Menampilkan laporan booking
+
+Contoh:
+- `view_kamar_tersedia`
+- `view_laporan_booking`
+
+---
+
+## 2. STORED PROCEDURE
+Digunakan untuk:
+- Proses booking kamar
+- Perhitungan total pembayaran
+
+---
+
+## 3. TRIGGER
+Digunakan untuk:
+- Mengubah status kamar otomatis saat booking
+- Mengubah status kamar saat checkout
+- Mencatat aktivitas booking ke log
+
+---
+
+## 4. CURSOR
+Digunakan untuk:
+- Menghitung total pendapatan hotel
+- Membuat laporan transaksi
+
+---
+
+# Project Structure
+
+```plaintext
+hotel-reservation-system/
+│
+├── app/
+│   ├── controllers/
+│   ├── models/
+│   ├── views/
+│   └── core/
+│
+├── config/
+├── database/
+├── public/
+├── routes/
+└── README.md
